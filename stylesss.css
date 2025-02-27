@@ -1,0 +1,146 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Navbar */
+header {
+    background: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsive Navbar */
+#menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+    
+    nav ul.active {
+        display: flex;
+    }
+    
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    #menu-toggle {
+        display: block;
+    }
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    text-align: center;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero-text {
+        width: 80%;
+        padding: 15px;
+    }
+}
+
+/* About Section */
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px;
+    background: white;
+}
+
+.about-img img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Categories & Destinations */
+.category-list, .destination-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category-item, .destination-item {
+    text-align: center;
+    margin: 15px;
+}
+
+.category-item img, .destination-item img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .category-list, .destination-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
