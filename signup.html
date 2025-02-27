@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="masterContainer">
+            <div id="signupBox">
+                <div class="boxArea" id="graphic">
+                    <img src="./Graphic designing/flowers.png" alt="Decorative" id="graphicImage">
+                    <p>Join Fortunez today!</p>
+                </div>
+                <div class="boxArea" id="SignUpArea">
+                    <form id="signupForm">
+                        <div class="boxItems">
+                            <img src="./Graphic designing/logo_small.png" alt="Logo" id="logo">
+                        </div>
+                        <div class="boxItems">
+                            <p>Create Your Account</p>
+                        </div>
+                        <div class="boxItems inputs">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" required>
+                            <p class="error-msg" id="usernameError"></p>
+                        </div>
+                        <div class="boxItems inputs">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                            <p class="error-msg" id="emailError"></p>
+                        </div>
+                        <div class="boxItems inputs">
+                            <label for="pword">Password</label>
+                            <input type="password" id="pword" required>
+                            <p class="error-msg" id="passwordError"></p>
+                        </div>
+                        <div class="boxItems inputs">
+                            <label for="confirmPword">Confirm Password</label>
+                            <input type="password" id="confirmPword" required>
+                            <p class="error-msg" id="confirmPasswordError"></p>
+                        </div>
+                        <div class="boxItems">                            
+                            <input type="submit" value="SIGN UP" id="submitButton">      
+                        </div>
+                        <div class="boxItems" id="log-on">
+                            <p>Already have an account? <a href="./login.html">Login</a></p>
+                        </div>
+                        <p id="signupError" class="error-msg"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="signup.js"></script>
+</body>
+</html>
