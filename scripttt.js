@@ -56,6 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             alert("Form submitted successfully!");
             contactForm.reset();
-        });
-    }
+        });
+    }
 });

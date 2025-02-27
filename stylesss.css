@@ -14,7 +14,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 nav ul {
@@ -31,42 +30,6 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-}
-
-/* Responsive Navbar */
-#menu-toggle {
-    display: none;
-    font-size: 24px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background: #333;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        padding: 10px 0;
-    }
-    
-    nav ul.active {
-        display: flex;
-    }
-    
-    nav ul li {
-        text-align: center;
-        padding: 10px 0;
-    }
-    
-    #menu-toggle {
-        display: block;
-    }
 }
 
 /* Hero Section */
@@ -91,17 +54,18 @@ nav a {
     border-radius: 10px;
 }
 
-@media (max-width: 768px) {
-    .hero-text {
-        width: 80%;
-        padding: 15px;
-    }
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 /* About Section */
 #about {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     padding: 50px;
     background: white;
@@ -128,13 +92,6 @@ nav a {
     width: 150px;
     height: auto;
     border-radius: 10px;
-}
-
-@media (max-width: 768px) {
-    .category-list, .destination-list {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 /* Footer */
